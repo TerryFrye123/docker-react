@@ -25,6 +25,7 @@ jobs:
           environment_name: front-end-tlf-env
           wait_for_deployment : false
           wait_for_environment_recovery : 300
+          use_existing_version_if_available : true
           region: us-east-1
           version_label: ${{ github.sha }}
           deployment_package: deploy.zip
