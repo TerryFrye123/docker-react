@@ -23,7 +23,8 @@ jobs:
           aws_secret_key: ${{ secrets.AWS_SECRET_KEY }}
           application_name: front-end-tlf
           environment_name: front-end-tlf-env
-          existing_bucket_name: elasticbeanstalk-us-east-1-226081961522
+          wait_for_deployment : false
+          wait_for_environment_recovery : 300
           region: us-east-1
           version_label: ${{ github.sha }}
           deployment_package: deploy.zip
