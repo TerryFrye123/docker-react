@@ -21,8 +21,8 @@ jobs:
         with:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY }}
           aws_secret_key: ${{ secrets.AWS_SECRET_KEY }}
-          application_name: frontend-tlf
-          environment_name: frontend-tlf-env
+          application_name: front-end-tlf
+          environment_name: front-end-tlf-env
           existing_bucket_name: elasticbeanstalk-us-east-1-226081961522
           region: us-east-1
           version_label: ${{ github.sha }}
